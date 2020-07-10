@@ -76,7 +76,7 @@ gulp.task("server", function() {
 		open: true,
 		cors: true,
 		ui: false,
-		browser: ["chrome", "iexplore"]
+		browser: ["chrome"]
 	});
 
 	gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css_dev", "refresh"));
