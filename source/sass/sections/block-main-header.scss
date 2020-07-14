@@ -31,15 +31,29 @@
 
 }
 .main-header__motto--first-line {
+	position: relative;
 	margin-top: 138px;
 	margin-left: 10px;
 	letter-spacing: 2.2px;
+z-index: 2;
 }
 .main-header__motto--second-line {
 	margin-top: 15px;
 	margin-left: 66px;
-
 	height: 61px;
 	letter-spacing: 2px;
 	line-height: 36px;
+z-index: 2;
+}
+
+.main-header__motto--first-line:before {
+	position: absolute;
+	top: -53px;
+	left: 144px;
+	content: "";
+	border: 2px solid #5d40ad;
+	transform: rotate(38.5deg);
+	width: 0;
+	height: 218px;
+z-index: -1;
 }
