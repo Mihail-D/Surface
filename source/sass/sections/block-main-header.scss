@@ -1,6 +1,45 @@
 .main-header {
-	margin: $center;
-	width: 1600px;
-	height: 150px;
-	background-color: tomato;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 320px;
+	min-height: 500px;
+	background-image: url("../img/header_bg_small_1x.png");
+	background-size: 320px 568px;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+	.main-header {
+		background-image: url("../img/header_bg_small_2x.png");
+	}
+}
+
+.main-header__logo {
+	margin: 0 auto;
+	margin-top: 38px;
+	margin-left: 92px;
+}
+
+.main-header__motto {
+	margin: 0;
+	color: #ffffff;
+	font-family: "Proxima Nova";
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+}
+.main-header__motto--first-line {
+	margin-top: 138px;
+	margin-left: 10px;
+	letter-spacing: 2.2px;
+}
+.main-header__motto--second-line {
+	margin-top: 15px;
+	margin-left: 66px;
+
+	height: 61px;
+	letter-spacing: 2px;
+	line-height: 36px;
 }
