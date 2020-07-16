@@ -1,7 +1,15 @@
 .main-block {
 	display: flex;
+	flex-direction: column;
 	margin: 0 auto;
-	width: 320px;
+	width: $small;
 	min-height: 800px;
-	background-color: oldlace;
 }
+
+//========== @media  tablet =======================
+// @media (min-width: $middle) {
+// 	.main-block {
+// 		width: $middle;
+// 		border: 1px dotted red;
+// 	}
+// }

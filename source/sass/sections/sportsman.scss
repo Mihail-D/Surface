@@ -1,0 +1,20 @@
+.sportsman {
+	display: flex;
+	flex-direction: column;
+	width: 320px;
+	min-height: 580px;
+}
+
+.sportsman__caption {
+	margin-top: 15px;
+	margin-left: 20px;
+	width: 210px;
+	height: 36px;
+	color: #e7e7e7;
+	font-family: "Proxima Nova";
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 60px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}

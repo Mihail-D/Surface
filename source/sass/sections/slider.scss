@@ -1,0 +1,78 @@
+.slider {
+	margin-top: 215px;
+	padding: 0;
+	width: 320px;
+	height: 283px;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+
+.slider__item-caption {
+	margin-top: 71px;
+	margin-bottom: 32px;
+	margin-left: 50px;
+	width: 245px;
+	height: 20px;
+	color: #c1c1c1;
+	font-family: "Proxima Nova";
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 36.49px;
+	text-transform: uppercase;
+	letter-spacing: 1.4px;
+}
+
+
+
+
+
+.slider__item-motto {
+	margin-left: 17px;
+	width: 295px;
+	height: 86px;
+	color: #000000;
+	font-family: "Proxima Nova";
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: 0.75px;
+}
+
+.slider .slick-dots {
+	margin-top: 33px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider .slick-dots li {
+	margin: 0 5px;
+	display: flex;
+}
+
+/* Активная точка */
+.slider .slick-dots li.slick-active button {
+	width: 10px;
+	height: 10px;
+	background-color: #d8d8d8;
+}
+
+/* Элемент точки */
+.slider .slick-dots li button {
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #5c3caf;
+	border: none;
+	border-radius: 50%;
+}
+
+.slider .slick-track {
+	display: flex;
+}
+
+.slider .slick-list {
+	overflow: hidden;
+}
