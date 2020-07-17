@@ -8,12 +8,18 @@
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	min-width: 0;
+	background-color: #f5f4f9;
+}
+
+.slider__players {
+	height: 236px;
 }
 
 .slider__item-caption {
+	position: relative;
 	margin-top: 71px;
 	margin-bottom: 32px;
 	margin-left: 50px;
@@ -27,6 +33,43 @@
 	text-transform: uppercase;
 	letter-spacing: 1.4px;
 }
+
+.slider__item-caption:after {
+	position: absolute;
+	content: "";
+	top: 24px;
+	left: -30px;
+	width: 17px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #5e42b0;
+}
+
+.slider__item-caption:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: -30px;
+	width: 18px;
+	height: 11px;
+	color: #000000;
+	font-family: "Proxima Nova Bold", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 34.49px;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+}
+
+ .slider__item-caption--1:before {
+content: "01";
+ }
+ .slider__item-caption--2:before {
+content: "02";
+ }
+ .slider__item-caption--3:before {
+content: "03";
+ }
 
 .slider__item-motto {
 	margin-left: 17px;
@@ -47,11 +90,15 @@
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.slider__players .slick-dots {
+	margin: 25px;
 }
 
 .slider .slick-dots li {
@@ -59,7 +106,6 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-
 }
 
 /* Активная точка */

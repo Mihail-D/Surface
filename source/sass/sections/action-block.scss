@@ -1,0 +1,87 @@
+.action-block {
+	position: relative;
+}
+
+.action-block--active {
+	height: 563px;
+}
+.action-block--contact {
+	height: 547px;
+}
+
+.action-block :before {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	content: "";
+	top: 293px;
+	left: 19px;
+	width: 70px;
+	height: 70px;
+	background-color: #5e42b0;
+	color: #f5f6f7;
+	font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 34.49px;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+}
+
+.action-block--active :before {
+	content: "01";
+}
+.action-block--contact :before {
+	content: "02";
+}
+.action-block--work :before {
+	content: "03";
+}
+
+.action-block :after {
+	position: absolute;
+	content: "";
+	top: 336px;
+	left: 46px;
+	width: 16px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #ffffff;
+	opacity: 0.3;
+}
+
+.action-block__motto-caption {
+	margin-top: 25px;
+	margin-left: 20px;
+	color: #e7e7e7;
+	font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.4px;
+}
+
+.action-block__motto-description {
+	margin-top: -16px;
+	margin-left: 19px;
+	width: 250px;
+	height: 75px;
+	color: #000000;
+	font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0.8px;
+}
+
+
+.motto-description--contact {
+	margin-top: -13px;
+	width: 270px;
+}
+
+.motto-description--work {
+	margin-top: -13px;
+	width: 270px;
+}

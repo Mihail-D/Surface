@@ -49,16 +49,45 @@
 		<main class="main-block">
 			<div class="sportsman sportsman__athletes">
 				<h2 class="sportsman__caption">athlets</h2>
+				<picture>
+					<source
+						type="image/webp"
+						media="(min-width: 1900px)"
+						srcset="
+							img/athletes_desktop.webp   1x,
+							img/athletes_desktop@2.webp 2x
+						"
+					/>
+
+					<source
+						type="image/webp"
+						media="(min-width: 768px)"
+						srcset="img/athletes_tablet.webp 1x, img/athletes_tablet@2.webp 2x"
+					/>
+
+					<img
+						class="sportsman__image"
+						src="img/athletes_mobile.png"
+						srcset="img/athletes_mobile@2.png"
+						alt="athletes image"
+						width="202"
+						height="275"
+					/>
+				</picture>
 				<div class="slider">
 					<div class="slider__item">
-						<h3 class="slider__item-caption">connection</h3>
+						<h3 class="slider__item-caption slider__item-caption--1">
+							connection
+						</h3>
 						<div class="slider__item-motto">
 							Connect with coaches directly, you can ping coaches to view
 							profile.
 						</div>
 					</div>
 					<div class="slider__item">
-						<h3 class="slider__item-caption">collaboration</h3>
+						<h3 class="slider__item-caption slider__item-caption--2">
+							collaboration
+						</h3>
 						<div class="slider__item-motto">
 							Work with other student athletes to  increase visability. When you
 							share and like other players videos it will increase your
@@ -67,7 +96,7 @@
 					</div>
 
 					<div class="slider__item">
-						<h3 class="slider__item-caption">growth</h3>
+						<h3 class="slider__item-caption slider__item-caption--3">growth</h3>
 						<div class="slider__item-motto">
 							Resources and tools for you to get better as a student Athelte.
 							Access to training classes, tutor sessions, etc
@@ -77,16 +106,166 @@
 			</div>
 
 			<div class="sportsman sportsman__players">
-				<h2 class="sportsman__caption">players</h2>
-				<div class="slider">
-					<div class="slider__item"></div>
-					<div class="slider__item"></div>
-					<div class="slider__item"></div>
+				<h2 class="sportsman__caption sportsman__caption--players">players</h2>
+				<picture>
+					<source
+						type="image/webp"
+						media="(min-width: 1900px)"
+						srcset="img/players_desktop.webp 1x, img/players_desktop@2.webp 2x"
+					/>
+
+					<source
+						type="image/webp"
+						media="(min-width: 768px)"
+						srcset="img/players_tablet.webp 1x, img/players_tablet@2.webp 2x"
+					/>
+
+					<img
+						class="sportsman__image sportsman__image--players"
+						src="img/players_mobile.png"
+						srcset="img/players_mobile@2.png"
+						alt="players image"
+						width="302"
+						height="248"
+					/>
+				</picture>
+				<div class="slider slider__players">
+					<div class="slider__item">
+						<h3 class="slider__item-caption slider__item-caption--1">
+							connection
+						</h3>
+						<div class="slider__item-motto">
+							Connect with coaches directly, you can ping coaches to view
+							profile.
+						</div>
+					</div>
+					<div class="slider__item">
+						<h3 class="slider__item-caption slider__item-caption--2">
+							collaboration
+						</h3>
+						<div class="slider__item-motto">
+							Work with other student athletes to  increase visability. When you
+							share and like other players videos it will increase your
+							visability as a player. This is the team work aspect to Surface 1.
+						</div>
+					</div>
+					<div class="slider__item">
+						<h3 class="slider__item-caption slider__item-caption--3">growth</h3>
+						<div class="slider__item-motto">
+							Resources and tools for you to get better as a student Athelte.
+							Access to training classes, tutor sessions, etc
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="action-block action-block--active">
+				<picture>
+					<!-- <source
+						type="image/webp"
+						media="(min-width: 1900px)"
+						srcset="img/action_block1_desktop.webp 1x, img/action_block1_desktop@2.webp 2x"
+					/> -->
+
+					<!-- <source
+						type="image/webp"
+						media="(min-width: 768px)"
+						srcset="img/action_block1_tablet.webp 1x, img/action_block1_tablet2.webp 2x"
+					/> -->
+
+					<img
+						class="action-block__image"
+						src="img/action_block1_mobile.png"
+						srcset="img/action_block1_mobile@2x.png"
+						alt="action block image"
+						width="320"
+						height="351"
+					/>
+				</picture>
+				<div class="action-block__motto action-block__motto--active">
+					<h3 class="action-block__motto-caption">be active</h3>
+					<div class="action-block__motto-description motto-description--active">
+						Post videos with your skills, Like and follow others to be more
+						popular.
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="action-block action-block--contact">
+				<picture>
+					<!-- <source
+						type="image/webp"
+						media="(min-width: 1900px)"
+						srcset="img/action_block2_desktop.webp 1x, img/action_block2_desktop@2.webp 2x"
+					/> -->
+
+					<!-- <source
+						type="image/webp"
+						media="(min-width: 768px)"
+						srcset="img/action_block2_tablet.webp 1x, img/action_block2_tablet@2.webp 2x"
+					/> -->
+
+					<img
+						class="action-block__image"
+						src="img/action_block2_mobile.png"
+						srcset="img/action_block2_mobile@2x.png"
+						alt="action block image"
+						width="320"
+						height="351"
+					/>
+				</picture>
+				<div class="action-block__motto  action-block__motto--contact">
+					<h3 class="action-block__motto-caption">find contact</h3>
+					<p class="action-block__motto-description motto-description--contact">
+						Contact others to find right coach or athlete you are looking for.
+					</p>
+				</div>
+			</div>
+
+
+
+			<div class="action-block action-block--work">
+				<picture>
+					<!-- <source
+						type="image/webp"
+						media="(min-width: 1900px)"
+						srcset="img/action_block3_desktop.webp 1x, img/action_block3_desktop@2.webp 2x"
+					/> -->
+
+					<!-- <source
+						type="image/webp"
+						media="(min-width: 768px)"
+						srcset="img/action_block3_tablet.webp 1x, img/action_block3_tablet2.webp 2x"
+					/> -->
+
+					<img
+						class="action-block__image"
+						src="img/action_block3_mobile.png"
+						srcset="img/action_block3_mobile@2x.png"
+						alt="action block image"
+						width="320"
+						height="351"
+					/>
+				</picture>
+				<div class=" action-block__motto--work">
+					<h3 class="action-block__motto-caption">work it</h3>
+					<p class="action-block__motto-description motto-description--work">
+						Enjoy being a student athlete, the recruiting process can be
+						overwhelming, we want to make this a enjoyable experience.
+					</p>
 				</div>
 			</div>
 		</main>
 
-		<footer class="main-footer"></footer>
+
+
+
+
+
+		<!-- <footer class="main-footer"></footer> -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script
 			type="text/javascript"
