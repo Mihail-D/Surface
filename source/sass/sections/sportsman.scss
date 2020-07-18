@@ -10,6 +10,7 @@
 }
 
 .sportsman__caption {
+	position: relative;
 	margin-top: 15px;
 	margin-left: 20px;
 	width: 210px;
@@ -21,6 +22,30 @@
 	line-height: 60px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+}
+
+.sportsman__caption::before {
+	position: absolute;
+	content: "";
+	top: 84px;
+	left: 60px;
+	width: 1px;
+	height: 15px;
+	border: 1px solid #5e42b0;
+	background-color: #5e42b0;
+	box-shadow: -22px -8px 0 #cfc6e7;
+}
+
+.sportsman__caption::after {
+	position: absolute;
+	content: "";
+	top: 91px;
+	left: 53px;
+	width: 15px;
+	height: 1px;
+	border: 1px solid #5e42b0;
+	background-color: #5e42b0;
+	box-shadow: -22px -8px 0 #cfc6e7;
 }
 
 .sportsman__caption--players {
